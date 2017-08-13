@@ -73,7 +73,7 @@ h1 {
 [class*="col-"] {
   min-height: 1px;
   padding: 0;
-  float:left;
+  float: left;
   text-align: center;
 }
 .col-1 {
