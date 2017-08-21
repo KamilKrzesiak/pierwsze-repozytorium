@@ -8,21 +8,21 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'css/main.css': 'sass/main.sass'
+          'style.css': 'style.sass'
         }
       }
     }
-  }
+  },
   imagemin: {
     dynamic: {
         files: [{
             expand: true,
-            cwd: 'images/',
+            cwd: 'DSC_0038',
             src: ['**/*.{png,jpg,gif}'],
             dest: 'images/build/'
         }]
     }
-}
+  },
   watch: {
     scripts: {
         files: ['sass/*.sass'],
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
             spawn: false,
         },
     }
-}
+  }
   );
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
