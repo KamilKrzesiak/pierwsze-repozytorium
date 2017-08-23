@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-  	sass: {
+    sass: {
       options: {
         sourceMap: true
       },
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['.sass'],
+        files: ['*.sass'],
         tasks: ['sass'],
         options: {
           spawn: false
